@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="As a client, I need to manage my information" skipped="0" tests="1" time="1.58" timestamp="2024-11-06 03:19:52"><testcase name="Register a new Client"><error message="Step [I send a POST request to register myself with my info] is defined with 0 parameters at 'co.com.udea.calidad.busquedaVuelosA.stepdefinitions.ClientStepDefinition.iSendAGetRequestToRegisterMyselfWithMyInfo()'.&#10;However, the gherkin step has 1 arguments:&#10; * DocString:&#10;      &quot;&quot;&quot;null&#10;      {&#10;        &quot;name&quot;: &quot;Robinson&quot;,&#10;        &quot;lastName&quot;: &quot;Coronado&quot;,&#10;        &quot;email&quot;: &quot;robinson.coronado@udea.edu.co&quot;,&#10;        &quot;phone&quot;: &quot;999-543-1298&quot;&#10;      }&#10;      &quot;&quot;&quot;&#10;Step text: I send a POST request to register myself with my info" type="io.cucumber.core.exception.CucumberException">Step [I send a POST request to register myself with my info] is defined with 0 parameters at 'co.com.udea.calidad.busquedaVuelosA.stepdefinitions.ClientStepDefinition.iSendAGetRequestToRegisterMyselfWithMyInfo()'.
+However, the gherkin step has 1 arguments:
+ * DocString:
+      """null
+      {
+        "name": "Robinson",
+        "lastName": "Coronado",
+        "email": "robinson.coronado@udea.edu.co",
+        "phone": "999-543-1298"
+      }
+      """
+Step text: I send a POST request to register myself with my info</error><system-err>Step [I send a POST request to register myself with my info] is defined with 0 parameters at 'co.com.udea.calidad.busquedaVuelosA.stepdefinitions.ClientStepDefinition.iSendAGetRequestToRegisterMyselfWithMyInfo()'.
+However, the gherkin step has 1 arguments:
+ * DocString:
+      """null
+      {
+        "name": "Robinson",
+        "lastName": "Coronado",
+        "email": "robinson.coronado@udea.edu.co",
+        "phone": "999-543-1298"
+      }
+      """
+Step text: I send a POST request to register myself with my info&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>
