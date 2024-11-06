@@ -1,26 +1,28 @@
 package co.com.udea.calidad.busquedaVuelosA.tasks;
 
+import io.restassured.response.Response;
+import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.rest.interactions.Get;
 import net.serenitybdd.screenplay.rest.interactions.Post;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class ConsumThe implements Task {
+public class CreateClient implements Task {
+    private static final String CLIENTS_ENDPOINT = "/clients";
+    private String clientId;
+
     @Override
     public <T extends Actor> void performAs(T actor) {
-        String postEndpoint = "/clients";
         Map<String, Object> clientData = new HashMap<>();
-        clientData.put("name", "John");
-        clientData.put("lastName", "Doe");
-        clientData.put("email", "johndoe@example.com");
+        clientData.put("name", "Robinson");
+        clientData.put("lastName", "Coronado");
+        clientData.put("email", "robinson.coronado@udea.edu.co");
         clientData.put("phone", "1234567890");
-
         actor.attemptsTo(
-                Post.to(postEndpoint).with(
+                Post.to(CLIENTS_ENDPOINT).with(
                         request -> request
                                 .relaxedHTTPSValidation()
                                 .contentType("application/json")
@@ -28,7 +30,7 @@ public class ConsumThe implements Task {
                 )
         );
     }
-    public static ConsumThe service(){
-        return Tasks.instrumented(ConsumThe.class);
+    public static CreateClient service(){
+        return Tasks.instrumented(CreateClient.class);
     }
 }

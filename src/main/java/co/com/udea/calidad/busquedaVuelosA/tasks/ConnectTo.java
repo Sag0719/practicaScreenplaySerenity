@@ -1,5 +1,6 @@
 package co.com.udea.calidad.busquedaVuelosA.tasks;
 
+import io.cucumber.java.Before;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
@@ -22,7 +23,6 @@ public class ConnectTo implements Task {
     public <T extends Actor> void performAs(T actor) {
         SerenityRest.reset();
         actor.whoCan(CallAnApi.at(url_string));
-        //actor.whoCan(Click.on("")); for FRONT
     }
 
     public static ConnectTo theService(){
