@@ -1,7 +1,5 @@
 package co.com.udea.calidad.busquedaVuelosA.tasks;
 
-import io.restassured.response.Response;
-import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;

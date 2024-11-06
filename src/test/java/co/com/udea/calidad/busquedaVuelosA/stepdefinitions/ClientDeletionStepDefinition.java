@@ -2,13 +2,10 @@ package co.com.udea.calidad.busquedaVuelosA.stepdefinitions;
 
 import co.com.udea.calidad.busquedaVuelosA.tasks.ConnectTo;
 import co.com.udea.calidad.busquedaVuelosA.tasks.DeleteClient;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
 
